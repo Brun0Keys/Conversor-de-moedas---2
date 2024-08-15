@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "New Amsterdam", sans-serif;
+}
+
+body {
+    background-image: url(./img/background/pngtree-vintage-world-map-world-dirt-paper-photo-image_82152.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Evita scroll */
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    gap: 20px; /* Espaço entre o main e a legenda */
+}
+
+main {
+    width: 65%; /* Ajuste a largura do main para ser mais largo */
+    background-color: #696966;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden; /* Evita que o conteúdo interno saia do contêiner */
+}
+
+label {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    display: block;
+}
+
+select, input {
+    background: rgb(180, 164, 90);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    height: 40px;
+    width: 100%;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+    cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+    color: rgba(30, 30, 30, 0.5);
+}
+
+button {
+    background-color: rgb(180, 164, 90);
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+section {
+    border: 1.5px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-convert {
+    width: 60px;
+    margin: 0 20px;
+}
+
+.flags {
+    width: 40px;
+}
+
+.currency-box {
+    text-align: center;
+}
+
+.currency {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+}
+
+.currency-value {
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+
+.legenda {
+    width: 60%; /* Ajuste a largura da legenda */
+    border: 1.5px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.legenda h1 {
+    text-align: center;
+    margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+.legenda ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Cria duas colunas de tamanho igual */
+    gap: 10px; /* Espaço entre os itens */
+    list-style: none; /* Remove o marcador padrão das listas */
+    width: 100%; /* Garante que as colunas ocupem toda a largura */
+}
+
+.legenda li {
+    display: flex;
+    align-items: center;
+}
+
+.legenda li img {
+    margin-right: 10px;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Conversor de Moedas</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <main>
+            <label>
+                Converter de:
+                <select id="from-currency">
+                    <option value="BRL">Real Brasileiro</option>
+                    <option value="USD">Dólar Americano</option>
+                    <option value="EUR">Euro</option>
+                    <option value="ARS">Peso Argentino</option>
+                    <option value="GBP">Libra Esterlina</option>
+                    <option value="CNY">Yuan Chinês</option>
+                    <option value="AED">Dirham dos Emirados Árabes Unidos</option>
+                    <option value="INR">Rupia Indiana</option>
+                    <option value="CHF">Franco Suíço</option>
+                    <option value="HUF">Florim Húngaro</option>
+                </select>
+            </label>
+
+            <label>
+                Converter para:
+                <select id="to-currency">
+                    <option value="BRL">Real Brasileiro</option>
+                    <option value="USD">Dólar Americano</option>
+                    <option value="EUR">Euro</option>
+                    <option value="ARS">Peso Argentino</option>
+                    <option value="GBP">Libra Esterlina</option>
+                    <option value="CNY">Yuan Chinês</option>
+                    <option value="AED">Dirham dos Emirados Árabes Unidos</option>
+                    <option value="INR">Rupia Indiana</option>
+                    <option value="CHF">Franco Suíço</option>
+                    <option value="HUF">Florim Húngaro</option>
+                </select>
+            </label>
+
+            <label>
+                Valor
+                <input id="amount" placeholder="10.000,00">
+            </label>
+
+            <button id="convert">Converter</button>
+
+            <section>
+                <div id="currency-display">
+                    <img id="currency-flag" class="flags" src="./img/flags/brasil.png" alt="bandeira-do-brasil">
+                    <p id="currency-name">Real Brasileiro</p>
+                    <p id="currency-value">R$ 0,00</p>
+                </div>
+
+                <img class="img-convert" src="./img/animations/moeda-estrangeira-unscreen.gif" alt="">
+
+                <div id="converted-currency-display">
+                    <img id="converted-currency-flag" class="flags" src="./img/flags/estados-unidos.png" alt="bandeira-dos-estados-unidos">
+                    <p id="converted-currency-name">Dólar</p>
+                    <p id="converted-currency-value">US$ 0,00</p>
+                </div>
+            </section>
+        </main>
+
+        <section class="legenda">
+            <h1>Principais Moedas utilizadas no Mundo</h1>
+            <ul>
+                <li> <img class="flags" src="./img/flags/brasil.png" alt="Bandeira do Brasil"> <img class="flags" src="./img/coins/real-brasileiro.png" alt="Moeda Real Brasileiro"> Real Brasileiro, moeda utilizada no Brasil</li>
+                <li> <img class="flags" src="./img/flags/argentina.png" alt="Bandeira da Argentina"> <img class="flags" src="./img/coins/peso.png" alt="Moeda Peso Argentino"> Peso Argentino, moeda utilizada na Argentina</li>
+                <li> <img class="flags" src="./img/flags/estados-unidos.png" alt="Bandeira dos Estados Unidos"> <img class="flags" src="./img/coins/dolar.png" alt="Moeda Dólar Americano"> Dólar Americano, moeda utilizada nos Estados Unidos da América</li>
+                <li> <img class="flags" src="./img/flags/uniao-europeia.png" alt="Bandeira da União Europeia"> <img class="flags" src="./img/coins/euro.png" alt="Moeda Euro"> Euro, moeda utilizada na União Europeia</li>
+                <li> <img class="flags" src="./img/flags/reino-unido.png" alt="Bandeira do Reino Unido"> <img class="flags" src="./img/coins/libra.png" alt="Moeda Libra Esterlina"> Libra Esterlina, moeda utilizada no Reino Unido</li>
+                <li> <img class="flags" src="./img/flags/china.png" alt="Bandeira da China"> <img class="flags" src="./img/coins/yuan.png" alt="Moeda Yuan Chinês"> Yuan Chinês, moeda utilizada na China</li>
+                <li> <img class="flags" src="./img/flags/emirados-arabes-unidos.png" alt="Bandeira dos Emirados Árabes Unidos"> <img class="flags" src="./img/coins/dirham.png" alt="Moeda Dirham dos Emirados Árabes Unidos"> Dirham dos Emirados Árabes Unidos, moeda utilizada nos Emirados Árabes Unidos</li>
+                <li> <img class="flags" src="./img/flags/india.png" alt="Bandeira da Índia"> <img class="flags" src="./img/coins/rupiah.png" alt="Moeda Rupia Indiana"> Rupia Indiana, moeda utilizada na Índia</li>
+                <li> <img class="flags" src="./img/flags/suica.png" alt="Bandeira da Suíça"> <img class="flags" src="./img/coins/franco.png" alt="Moeda Franco Suíço"> Franco Suíço, moeda utilizada na Suíça</li>
+                <li> <img class="flags" src="./img/flags/hungria.png" alt="Bandeira da Hungria"> <img class="flags" src="./img/coins/florim.png" alt="Moeda Florim Húngaro"> Florim Húngaro, moeda utilizada na Hungria</li>
+            </ul>
+        </section>
+    </div>
+    <script src="./scripts.js"></script>
+</body>
+
+</html>
