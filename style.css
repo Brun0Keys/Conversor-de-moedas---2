@@ -28,11 +28,12 @@ body {
 
 main {
     width: 65%; /* Ajuste a largura do main para ser mais largo */
-    background-color: #696966;
+    background-color: rgba(189, 165, 56, 0.486);
     border-radius: 20px;
     padding: 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     overflow: hidden; /* Evita que o conteúdo interno saia do contêiner */
+    border: 1.5px solid rgb(0, 0, 0);
 }
 
 label {
@@ -44,16 +45,17 @@ label {
 }
 
 select, input {
-    background: rgb(180, 164, 90);
+    background-color: rgba(189, 165, 56, 0.486);
     border: 1px solid rgb(0, 0, 0);
     border-radius: 4px;
     height: 40px;
     width: 100%;
     margin-bottom: 15px;
     padding-left: 10px;
-    font-size: 16px;
+    font-size: 20px;
+    letter-spacing: 2px;
     font-weight: 700;
-    color: black;
+    color: rgb(0, 0, 0);
     cursor: pointer;
 }
 
@@ -62,7 +64,7 @@ select, input {
 }
 
 button {
-    background-color: rgb(180, 164, 90);
+    background-color: rgba(189, 164, 56, 0.603);
     border-radius: 5px;
     width: 100%;
     height: 40px;
@@ -72,6 +74,7 @@ button {
     font-weight: 700;
     cursor: pointer;
     margin-top: 10px;
+    letter-spacing: 2px;
 }
 
 button:hover {
@@ -81,7 +84,7 @@ button:hover {
 section {
     border: 1.5px solid rgb(0, 0, 0);
     border-radius: 20px;
-    margin-top: 20px;
+    margin-top: 0px;
     padding: 15px;
     display: flex;
     justify-content: space-between;
@@ -105,10 +108,11 @@ section {
     font-size: 14px;
     font-weight: 400;
     color: rgb(0, 0, 0);
+    letter-spacing: 2px;
 }
 
 .currency-value {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
     color: rgb(0, 0, 0);
 }
@@ -117,10 +121,11 @@ section {
     width: 60%; /* Ajuste a largura da legenda */
     border: 1.5px solid rgb(0, 0, 0);
     border-radius: 20px;
-    padding: 15px;
+    padding: 15px ;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgba(189, 165, 56, 0.486);
 }
 
 .legenda h1 {
@@ -131,7 +136,7 @@ section {
 .legenda ul {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Cria duas colunas de tamanho igual */
-    gap: 10px; /* Espaço entre os itens */
+    gap: 25px; /* Espaço entre os itens */
     list-style: none; /* Remove o marcador padrão das listas */
     width: 100%; /* Garante que as colunas ocupem toda a largura */
 }
@@ -142,5 +147,5 @@ section {
 }
 
 .legenda li img {
-    margin-right: 10px;
+    margin-right: 15px;
 }
